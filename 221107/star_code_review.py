@@ -13,7 +13,7 @@ def answer():
         printstar(number_blank, number_count)
         print("")
 
-    for number_blank in range(number_count - 2, 0, -1):
+    for number_blank in range(number_count - 2, -1, -1):
         printstar(number_blank, number_count)
         print("")
 
