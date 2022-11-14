@@ -5,6 +5,14 @@ count = 0
 result = []
 
 def kinship():
+    input()
+    search(a, 0)
+    if len(result) == 0:
+        print(-1)
+    else:
+        print(result[0] - 1)
+
+def input():
     people = int(input("전체 사람의 수를 입력하세요 : "))
     while True:
         a, b = map(int, input("비교 대상을 입력하세요 : ").split())
@@ -21,11 +29,6 @@ def kinship():
                 kinship[y].append(x)
                 break
             print("정확히 입력하세요.")
-    search(a, 0)
-    if len(result) == 0:
-        print(-1)
-    else:
-        print(result[0] - 1)
 
 def search(a, cnt):
     cnt += 1
